@@ -178,6 +178,7 @@ h3 {
         url(img/seno-mobile.jpg);
 background-position: center;
 background-size: cover;
+background-repeat: no-repeat;
     }
 
     h3 {
@@ -330,6 +331,7 @@ nav {
 
     nav {
         gap: 0;
+        padding-right: 0.2rem;
     }
 
     .nav-links {
@@ -515,7 +517,7 @@ nav {
     }
 
     .heading {
-        padding-top: 3rem;
+        padding: 5rem 2rem 1rem 2rem;
     }
 
     p {
@@ -761,11 +763,6 @@ nav {
         max-width: 13rem;
         height: auto;
     }
-}
-
-
-@media (max-height: 768px) {
-    .swiper-wrapper {}
 }
 
 @media (max-height: 768px) and (min-width: 768px) {
