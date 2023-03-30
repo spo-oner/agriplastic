@@ -104,7 +104,7 @@ h3 {
         url(img/seno.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1920px 1100px;
+    background-size: cover;
     background-position: left;
 }
 
@@ -137,7 +137,7 @@ h3 {
 
 @media (max-width: 1200px) {
     .background {
-        background-size: 1300px 1080px;
+        background-size: cover;
         background-position: left;
     }
 
@@ -167,7 +167,7 @@ h3 {
     }
 
     .background {
-        background-size: 1000px 900px;
+        background-size: cover;
         background-position: left;
     }
 }
@@ -175,10 +175,10 @@ h3 {
 @media (max-width: 576px) {
     .background {
         background: linear-gradient(180deg, rgba(86, 151, 188, 0.4) 0%, rgba(37, 120, 57, 0.4) 100%),
-        url(img/seno-mobile.jpg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+            url(img/seno-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     h3 {
@@ -558,6 +558,24 @@ nav {
     height: auto;
 }
 
+
+@media (max-width: 1055px) {
+
+    .benefits-pic2 {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .benefits-pic1 {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+
+}
+
 @media (max-width: 1200px) {
 
     main {
@@ -568,6 +586,7 @@ nav {
         gap: 1rem;
     }
 
+
     .table {
         align-items: center;
         gap: 1rem;
@@ -576,6 +595,11 @@ nav {
 
 @media (max-width: 768px) {
 
+    /* .benefits-pic1 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    } */
 
     .benefits-pic2 {
         width: 100%;
@@ -585,29 +609,6 @@ nav {
 
 }
 
-@media (max-width: 576px) {
-    .schemes {
-        flex-wrap: wrap;
-        padding: 0;
-    }
-
-    .benefits-pic1 {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-    }
-
-    .benefits-pic2 {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-    }
-
-    .table {
-        gap: 0;
-    }
-
-}
 
 @media (max-height: 768px) {
     .benefits-pic1 {
@@ -629,16 +630,42 @@ nav {
 
 @media (max-height: 768px) and (min-width: 768px) {
 
+
+    .benefits-pic1 {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+    }
+
     .benefits-pic2 {
         width: 100%;
         max-width: 350px;
         height: auto;
     }
 
+
+}
+
+@media (max-width: 576px) {
+
     .benefits-pic1 {
         width: 100%;
-        max-width: 700px;
+        max-width: 280px;
         height: auto;
+    }
+
+    .benefits-pic2 {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .table {
+        gap: 0;
+    }
+
+    .schemes {
+        flex-wrap: wrap;
     }
 
 }
@@ -996,12 +1023,14 @@ iframe {
         font-size: 0.7rem;
     }
 
-    .contact-links a, .contact-links li {
+    .contact-links a,
+    .contact-links li {
         font-size: 1.4rem;
         white-space: normal;
     }
 
-    .contact-links a, .contact-links li {
+    .contact-links a,
+    .contact-links li {
         font-size: 1.4rem;
         white-space: normal;
     }
